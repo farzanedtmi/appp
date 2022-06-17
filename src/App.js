@@ -1,4 +1,6 @@
 import React from "react";
+import Weather from "./Weather";
+
 import "./App.css";
 
 export default function App() {
@@ -6,19 +8,17 @@ export default function App() {
     <div className="App">
       <div className="container">
         <h1>Weather App</h1>
-        This is coded by farzan {""}
-        <a
-          className="App-link"
-          href="https://github.com/farzanedtmi/appp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          open-source on github
-        </a>
-        <button type="button" class="btn btn-primary">
-          Primary
-        </button>
+        <Weather />
       </div>
+      This is coded by farzan {""}
+      <a
+        className="Git-link"
+        href="https://github.com/farzanedtmi/appp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        open-source on github
+      </a>
     </div>
   );
 }
