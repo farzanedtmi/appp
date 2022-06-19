@@ -1,7 +1,16 @@
 import React from "react";
 import "./Weather.css";
+import axious from "axios";
 
-export default function Weather() {
+export default function Weather(props) {
+  function handleResponse(response) {
+    alert(`The weather in Hamedan is ${response.data.main.temp} c`);
+  }
+  let apiKey = "0b121fa36f264f094fd0196401db2f00";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}`;
+
+  axious.get(apiUrl).then(handleResponse);
+
   return (
     <div>
       <form>
