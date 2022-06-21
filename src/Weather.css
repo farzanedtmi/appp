@@ -1,3 +1,10 @@
 ul {
   list-style-type: none;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.Weather {
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 180px;
 }

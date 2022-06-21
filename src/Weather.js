@@ -3,9 +3,7 @@ import "./Weather.css";
 import axious from "axios";
 
 export default function Weather(props) {
-  function handleResponse(response) {
-    alert(`The weather in Hamedan is ${response.data.main.temp} c`);
-  }
+  function handleResponse(response) {}
   let apiKey = "0b121fa36f264f094fd0196401db2f00";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}`;
 
@@ -15,15 +13,15 @@ export default function Weather(props) {
     <div>
       <form>
         <input
-          type="text"
-          autofocus="off"
+          type="search"
+          autoFocus="on"
           placeholder="Enter a City "
           class="search"
         />{" "}
         <input type="submit" value="Search" class="btn btn-primary" />
       </form>
-
-      <div class="container">
+      <br></br>
+      <div class="Weather ">
         <div class="row">
           <div class="col-4">
             <ul>

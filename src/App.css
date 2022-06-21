@@ -1,7 +1,17 @@
 .App {
   text-align: center;
+  color: black;
+  font-family: arial, sans-serif;
 }
 .container {
   border: 1px ridge black;
-  margin-top: 30px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/821/959/non_2x/natural-landscape-fall-season-free-vector.jpg);
+  background-position: center;
+}
+h1 {
+  color: #1e90ff;
+  text-align: center;
+  margin-top: 20px;
 }
