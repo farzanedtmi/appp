@@ -2,6 +2,7 @@ ul {
   list-style-type: none;
   margin-top: 40px;
   text-align: center;
+  margin-right: 10px;
 }
 
 .Weather {
