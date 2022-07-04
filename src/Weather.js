@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
-
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -48,7 +47,7 @@ export default function Weather(props) {
             className="search"
             onChange={handleCityChange}
           />{" "}
-          <input type="submit" value="Search" class="btn btn-primary" />
+          <input type="submit" value="Search" class="btn btn-success" />
         </form>
         <br></br>
         <div className="Weather ">
@@ -58,15 +57,23 @@ export default function Weather(props) {
                 <li>
                   <FormattedDate date={weatherData.date} />
                 </li>
-                <li>{Math.round(weatherData.temperature)} ℃</li>
+                <li>
+                  <span className="temp">
+                    {Math.round(weatherData.temperature)}
+                  </span>{" "}
+                  <span className="celsiusUnit">℃</span>
+                </li>
               </ul>
             </div>
             <div className="col-4">
               {" "}
               <ul>
-                <li>{city}</li>
-                <li> {weatherData.iconUrl}</li>
-                <li>{weatherData.description}</li>
+                <li className="city">{city}</li>
+                <li>
+                  {" "}
+                  <img src={weatherData.iconUrl}></img>{" "}
+                </li>
+                <li> {weatherData.description}</li>
               </ul>
             </div>
             <div className="col-4">

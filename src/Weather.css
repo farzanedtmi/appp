@@ -12,3 +12,14 @@ ul {
   background-blend-mode: color-burn;
   margin-bottom: 180px;
 }
+.temp {
+  font-size: xx-large;
+  color: #ff7f50;
+}
+.city {
+  font-size: xx-large;
+  color: #ff7f50;
+}
+.celsiusUnit {
+  font-size: 190px;
+}
