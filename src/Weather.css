@@ -3,6 +3,7 @@ ul {
   margin-top: 40px;
   text-align: center;
   margin-right: 10px;
+  font-size: 20px;
 }
 
 .Weather {
@@ -22,4 +23,8 @@ ul {
 }
 .celsiusUnit {
   font-size: 30px;
+}
+.img {
+  background-color: #ffac8e;
+  border-radius: 30px;
 }

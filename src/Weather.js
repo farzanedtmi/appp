@@ -71,7 +71,11 @@ export default function Weather(props) {
                 <li className="city">{city}</li>
                 <li>
                   {" "}
-                  <img src={weatherData.iconUrl}></img>{" "}
+                  <img
+                    className="img"
+                    src={weatherData.iconUrl}
+                    alt={weatherData.description}
+                  ></img>{" "}
                 </li>
                 <li> {weatherData.description}</li>
               </ul>
