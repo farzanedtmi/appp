@@ -14,7 +14,6 @@ ul {
   margin-bottom: 180px;
 }
 .temp {
-  font-size: xx-large;
   color: #ff7f50;
 }
 .city {
@@ -25,6 +24,9 @@ ul {
   font-size: 30px;
 }
 .img {
-  background-color: #ffac8e;
+  background-color: white;
   border-radius: 30px;
+}
+.unit {
+  text-decoration: none;
 }
