@@ -3,6 +3,7 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForcast from "./WeatherForcast";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -12,6 +13,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -59,7 +61,7 @@ export default function Weather(props) {
                   <FormattedDate date={weatherData.date} />
                 </li>
                 <li>
-                  <span className="temp">
+                  <span>
                     <WeatherTemperature celsius={weatherData.temperature} />{" "}
                   </span>
                 </li>
@@ -90,6 +92,7 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
+        <WeatherForcast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

@@ -12,6 +12,8 @@ ul {
   background-position: center;
   background-blend-mode: color-burn;
   margin-bottom: 180px;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 .temp {
   color: #ff7f50;
@@ -26,7 +28,4 @@ ul {
 .img {
   background-color: white;
   border-radius: 30px;
-}
-.unit {
-  text-decoration: none;
 }
