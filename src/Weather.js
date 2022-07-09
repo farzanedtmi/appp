@@ -25,7 +25,7 @@ export default function Weather(props) {
     setReady(true);
   }
   function search() {
-    const apiKey = "0b121fa36f264f094fd0196401db2f00";
+    const apiKey = "4f5068bbd16732ce96de6092c37d504d";
 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -87,7 +87,7 @@ export default function Weather(props) {
             </div>
           </div>
         </div>{" "}
-        <WeatherForecast coordinates={weatherData.coordinates} /> <div> hi</div>{" "}
+        <WeatherForecast coordinates={weatherData.coordinates} />{" "}
       </div>
     );
   } else {

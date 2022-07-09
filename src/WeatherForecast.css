@@ -1,6 +1,14 @@
 .WeatherForcast {
-  border: 1px solid brown;
+  border: 1px solid #60d0d6;
   border-radius: 4px;
   margin-bottom: 40px;
   margin-top: 10px;
+  background-color: rgb(246, 246, 246);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/821/959/non_2x/natural-landscape-fall-season-free-vector.jpg);
+  background-position: center;
+  background-blend-mode: color-burn;
+}
+
+.WeatherForcast-temperature-min {
+  color: dimgray;
 }

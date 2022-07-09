@@ -4,6 +4,9 @@ ul {
   text-align: center;
   margin-right: 10px;
   font-size: 20px;
+  color: #fc6366;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .Weather {
@@ -20,12 +23,8 @@ ul {
 }
 .city {
   font-size: xx-large;
-  color: #ff7f50;
+  color: #60d0d6;
 }
 .celsiusUnit {
   font-size: 30px;
-}
-.img {
-  background-color: white;
-  border-radius: 30px;
 }
