@@ -3,7 +3,7 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-import WeatherForcast from "./WeatherForcast";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -72,7 +72,7 @@ export default function Weather(props) {
               <ul>
                 <li className="city">{city}</li>
                 <li>
-                  <WeatherIcon code={weatherData.iconUrl} />
+                  <WeatherIcon code={weatherData.iconUrl} size={52} />
                 </li>
                 <li> {weatherData.description}</li>
               </ul>
@@ -86,8 +86,8 @@ export default function Weather(props) {
               </ul>
             </div>
           </div>
-        </div>
-        <WeatherForcast coordinates={weatherData.coordinates} />
+        </div>{" "}
+        <WeatherForecast coordinates={weatherData.coordinates} /> <div> hi</div>{" "}
       </div>
     );
   } else {
