@@ -5,10 +5,12 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
+import WeatherInfo from "./WeatherInfo";
+
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState(props.city);
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     console.log(response.data);
@@ -35,6 +37,7 @@ export default function Weather(props) {
     search();
   }
   function handleCityChange(event) {
+    event.preventDefault();
     setCity(event.target.value);
   }
 
@@ -69,7 +72,9 @@ export default function Weather(props) {
             <div className="col-4">
               {" "}
               <ul>
-                <li className="city">{city}</li>
+                <li className="city">
+                  <WeatherInfo data={weatherData} />
+                </li>
                 <li>
                   <WeatherIcon code={weatherData.iconUrl} size={52} />
                 </li>
